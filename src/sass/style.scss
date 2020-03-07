@@ -1,0 +1,18 @@
+@import 'libs/normalize';
+@import 'libs/fonts';
+
+
+@import 'base/nav';
+@import 'base/header';
+@import 'base/button';
+
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+.container {
+    position: relative;
+    max-width: 935px;
+    margin: 0 auto;
+}
+
+@import 'block/tapes';

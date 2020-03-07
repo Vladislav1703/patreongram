@@ -1,0 +1,20 @@
+.button {
+    border: 0;
+    height: 24px;
+    width: 24px;
+    max-height: 100%;
+    outline: none;
+    &-feedback {
+        background-color: #ffffff;
+        padding: 0;
+        margin-right: 16px;
+    }
+    &-comment {
+        width: auto;
+        height: 18px;
+        background-color: #ffffff;
+        color: #3897f0;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}

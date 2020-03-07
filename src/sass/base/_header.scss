@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    
+    &-post {
+        width: calc(100% - 28px);
+        padding: 14px;
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+        background-color: #ffffff;
+    }
+}
