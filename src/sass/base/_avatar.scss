@@ -1,0 +1,15 @@
+.avatar {
+    height: 66px;
+    width: 66px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 50%;
+    &-post {
+        height: 32px;
+        width: 32px;
+    }
+
+    &-profile {
+        height: 150px;
+        width: 150px;
+    }
+}

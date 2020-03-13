@@ -11,4 +11,12 @@
         border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
         background-color: #ffffff;
     }
+
+    &-profile {
+        display: flex;
+        width: 100%;
+        /* border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);*/
+        margin-bottom: 44px; 
+    }
 }
+

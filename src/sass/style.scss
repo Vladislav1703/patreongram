@@ -1,10 +1,12 @@
 @import 'libs/normalize';
 @import 'libs/fonts';
 
-
+@import 'base/body';
 @import 'base/nav';
 @import 'base/header';
 @import 'base/button';
+@import 'base/avatar';
+@import 'base/usersname';
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
@@ -16,3 +18,4 @@
 }
 
 @import 'block/tapes';
+@import 'block/profile';

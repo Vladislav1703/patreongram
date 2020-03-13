@@ -7,12 +7,14 @@ nav {
     background-color: #ffffff;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     z-index: 3;
+    padding: 16px 20px;
 }
 .wrapper-navbar {
     margin: 0 auto;
     width: 935px;
     display: flex;
     justify-content: space-between;
+    height: 28px;
 }
 
 .wrapper-link {
@@ -42,4 +44,43 @@ nav {
     margin: 0 16px;
     background-color: rgba(var(--i1d,38,38,38),1);
 }
+.wrapper-file-input {
+    position: relative;
+    label {
+        display: block;
+        height: 24px;
+    }
+}
 
+#file-input {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: -50px;
+}
+
+.search {
+    width: 200px;
+    position: relative;
+    input {
+        outline: none;
+        width: 100%;
+        height: 100%;
+    }
+    button[type="reset"] {
+        position: absolute;
+        right: 5px;
+        border-radius: 50%;
+        border: none;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-size: 15px;
+        height: 20px;
+        width: 20px;
+        display: none;
+    }
+    input:valid ~ button[type="reset"] {
+        display: block;
+    }  
+}
