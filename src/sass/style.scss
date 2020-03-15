@@ -1,7 +1,8 @@
 @import 'libs/normalize';
 @import 'libs/fonts';
 
-@import 'base/body';
+@import 'base/grid';
+@import 'base/mixins';
 @import 'base/nav';
 @import 'base/header';
 @import 'base/button';
@@ -17,5 +18,5 @@
     margin: 0 auto;
 }
 
-@import 'block/tapes';
+@import 'block/main';
 @import 'block/profile';

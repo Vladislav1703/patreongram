@@ -1,0 +1,24 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 935px 1fr;
+    grid-template-rows: 62px 1fr 794px ;
+    grid-template-areas: 
+        "nav nav nav"
+        ". header ."
+        ". main .";
+    grid-gap: 10px;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+#mainNav {
+    grid-area: nav;
+}
+
+#mainArticle {  
+    grid-area: main;
+}
+
+#mainHeader {
+    grid-area: header;
+}

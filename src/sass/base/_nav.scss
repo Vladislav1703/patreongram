@@ -1,86 +1,86 @@
-nav {
-    width: 100%;
-    position: fixed;
-    padding: 5px 0;
-    display: flex;
-    top: 0;
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 935px 1fr;
+    border-bottom: $border;
     background-color: #ffffff;
-    border: 1px solid rgba(var(--b6a,219,219,219),1);
-    z-index: 3;
-    padding: 16px 20px;
-}
-.wrapper-navbar {
-    margin: 0 auto;
-    width: 935px;
-    display: flex;
-    justify-content: space-between;
-    height: 28px;
-}
-
-.wrapper-link {
-    align-items: center;
-    display: flex;
-}
-
-.link {
-    display: flex;
-    align-items: center;
-    &-item {
-        margin-left: 30px;
-        &:first-child {
-            margin-left: 0;
-        }
+    &_wrapper {
+        display: grid;
+        grid-template-columns: 360px 1fr 360px;
     }
 }
-
+// иконки в баре навигации
 .icons {
     height: 24px;
-    width: 24px;
+}
+
+// секция со ссылкой и лого
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .vertical-devider {
-    height: 28px;
-    width: 1px;
     margin: 0 16px;
-    background-color: rgba(var(--i1d,38,38,38),1);
+    width: 1px;
+    height: 28px;
+    background-color: black;
 }
+
+// секция с поиском
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .input {
+        border: 1px solid gray;
+        width: 100%;
+        height: 28px;
+        border-radius: 4px;
+        padding: 0 5px;
+    }
+    .button_reset {
+        position: absolute;
+        right: 5px;
+        border: 0;
+        border-radius: 50%;
+        padding: 0;
+        height: 15px;
+        width: 15px;
+    }
+    // убираем синий крестик
+    input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+    input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration { display: none; }
+}
+
+// cекция с ссылками
+.navbar_actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+// ссылки
+.link {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+// обёртка для инпута загрузки файлов
 .wrapper-file-input {
     position: relative;
     label {
-        display: block;
-        height: 24px;
+        display: flex;
     }
-}
-
-#file-input {
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    top: -50px;
-}
-
-.search {
-    width: 200px;
-    position: relative;
     input {
-        outline: none;
-        width: 100%;
-        height: 100%;
-    }
-    button[type="reset"] {
         position: absolute;
-        right: 5px;
-        border-radius: 50%;
-        border: none;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-        font-size: 15px;
-        height: 20px;
-        width: 20px;
-        display: none;
+        width: 1px;
+        height: 1px;
+        top: -80px;
     }
-    input:valid ~ button[type="reset"] {
-        display: block;
-    }  
 }

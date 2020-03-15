@@ -1,9 +1,9 @@
 .avatar {
-    height: 66px;
-    width: 66px;
+    height: 56px;
+    width: 56px;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     border-radius: 50%;
-    &-post {
+    &_mini {
         height: 32px;
         width: 32px;
     }

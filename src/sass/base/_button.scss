@@ -4,12 +4,13 @@
     width: 24px;
     max-height: 100%;
     outline: none;
+    cursor: pointer;
     &-feedback {
         background-color: #ffffff;
         padding: 0;
         margin-right: 16px;
     }
-    &-comment {
+    &-blue {
         width: auto;
         height: 18px;
         background-color: #ffffff;
