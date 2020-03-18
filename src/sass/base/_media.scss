@@ -1,0 +1,63 @@
+@media (max-width: 576px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 170px 1fr ;
+        grid-template-areas:
+        "header"
+        "main";
+        width: 100%;
+    }
+    .navbar { //убираем поле поиска
+        box-sizing: border-box;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-flow: column;
+        height: 60px;
+        &_wrapper {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-auto-flow: column;
+        }
+        .logo { //секция с логотипом
+            grid-template-columns: 1fr;
+            .icons { //костыль чтобы иконка смотрелась по центру
+                padding-left: 30%;
+            }
+        }
+        &_actions { // нейтрализуем justify-content 
+            justify-content: normal;
+        }
+        .waste, .icons_logo, .vertical-devider, .search { //отключаем неиспользуемые поля
+            display: none;
+        }
+    }
+    .link {
+        justify-content: center;
+    }
+
+    .header {
+        grid-template-areas: none;
+        grid-template-rows: 1fr;
+        &_link { // отключаем ссылку на свою страницу в хедере
+            display: none;
+        }
+        .linkStories {
+            border: none;
+            background-color: $main;
+        }
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "news";
+        .recomendations {
+            display: none;
+        }
+        .post_comments {
+            max-width: 100vh;
+            overflow: scroll;
+        }
+    }
+    
+}

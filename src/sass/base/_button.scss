@@ -38,4 +38,11 @@
         }
 
     }
+    &_content {
+        max-width: 650px;
+        border: none;
+        position: relative;
+        box-sizing: border-box;
+        padding: 0;
+    }
 }

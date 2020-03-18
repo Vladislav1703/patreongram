@@ -17,11 +17,6 @@ main {
     font-size: 10px;
 }
 
-// обёртка для имен
-.wrapper-name {
-    margin-left: 14px;
-    white-space: nowrap;
-}
 
 //ширина 100px
 .mw100 {
@@ -41,7 +36,9 @@ main {
     background-color: #ffffff;
     &_describe, .comment {
         padding: 5px 10px;
-        display: flex;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
     }
     &_date {
         padding: 5px 10px;
@@ -53,6 +50,10 @@ main {
     &_feedback {
         padding: 5px 10px;
         background-color: #ffffff;
+    }
+    &_comments {
+        max-height: 100px;
+        overflow: scroll;
     }
 }
 
@@ -99,5 +100,49 @@ main {
     img {
         max-width: 100%;
     }
+    &_paid {
+        display: grid;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        background-color: $main;
+        font-size: 32px;
+    }
 }
 
+// блок рекомендаций
+.recomendations {
+    background-color: #ffffff;
+    border: $border;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    &_list {
+        text-align: start;
+        padding: 10px;
+        list-style-type: none;
+        margin: 0;
+    }
+    &_user {
+        display: grid;
+        grid-auto-flow: column;
+        margin-bottom: 15px;
+    }
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+}
+
+#linkRecomendations {
+    grid-area: rec;
+}
+
+#news {
+    grid-area: news;
+}

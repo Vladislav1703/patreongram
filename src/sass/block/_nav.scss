@@ -1,8 +1,13 @@
 .navbar {
+    position: fixed;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 935px 1fr;
     border-bottom: $border;
     background-color: #ffffff;
+    z-index: 2;
+    height: 40px;
+    padding-left: 10px;
     &_wrapper {
         display: grid;
         grid-template-columns: 360px 1fr 360px;
@@ -15,9 +20,9 @@
 
 // секция со ссылкой и лого
 .logo {
-    display: flex;
+    display: grid;
+    grid-template-columns: 24px 30px 1fr;
     align-items: center;
-    justify-content: start;
 }
 
 .vertical-devider {
@@ -29,7 +34,7 @@
 
 // секция с поиском
 .search {
-    display: flex;
+    display: grid;
     align-items: center;
     position: relative;
     .input {
@@ -59,13 +64,14 @@
 
 // cекция с ссылками
 .navbar_actions {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: flex-end;
 }
 
 // ссылки
 .link {
-    display: flex;
+    display: grid;
     align-items: center;
     margin-right: 30px;
 }

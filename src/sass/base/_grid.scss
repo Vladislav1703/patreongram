@@ -1,9 +1,10 @@
 body {
     display: grid;
     grid-template-columns: 1fr 935px 1fr;
-    grid-template-rows: 62px 1fr 794px ;
+    //grid-template-rows: 62px 1fr 794px ;
+    grid-template-rows: 1fr 794px ;
     grid-template-areas: 
-        "nav nav nav"
+        //"nav nav nav"
         ". header ."
         ". main .";
     grid-gap: 10px;

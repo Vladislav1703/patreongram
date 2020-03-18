@@ -1,0 +1,55 @@
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: "head"
+    "stories";
+    grid-gap: 10px;
+    padding-top: 20px;
+    &_link {
+        display: flex;
+        align-items: center;
+    }
+    &_post {
+        display: grid;  
+        grid-template-columns: 60px 1fr;
+        box-sizing: border-box;
+        padding: 5px;
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+        background-color: #ffffff;
+    }
+}
+
+// блок с историями пользователей
+.linkStories {
+    background-color: #ffffff;
+    border: $border;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+}
+// истории
+.stories {
+    grid-auto-flow: column;
+    display: grid;
+    overflow-x: auto;
+    border-radius: 4px;
+    padding: 4px;
+    &_subheader {
+       padding: 4px;
+    }
+}
+
+
+
+
+
+#linkStories {
+    grid-area: stories;
+}
+
+#linkHeader {
+    grid-area: head;
+}
+
+

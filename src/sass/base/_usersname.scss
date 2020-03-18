@@ -21,3 +21,11 @@
         margin: 0;
     }
 }
+
+// обёртка для имен
+.wrapper-name {
+    display: grid;
+    align-items: center;
+    margin-left: 14px;
+    white-space: nowrap;
+}

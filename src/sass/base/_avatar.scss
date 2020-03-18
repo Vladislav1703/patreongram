@@ -12,4 +12,12 @@
         height: 150px;
         width: 150px;
     }
+    &_story { // аватарки историй
+        border: 3px solid #d778b8; 
+        border-radius: 50%;
+        max-height: 66px;
+        &_watched {
+            border-color: grey;
+        }
+    }
 }
